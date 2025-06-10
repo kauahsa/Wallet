@@ -1,0 +1,65 @@
+#
+# Makefile para o projeto FT_Coin
+#
+
+# Compilador
+CXX = g++
+
+# Flags de compilação
+# -std=c++11: Usa o padrão C++11
+# -Wall -Wextra: Habilita a maioria dos avisos
+# -g: Gera informações de debug
+CXXFLAGS = -std=c++11 -Wall -Wextra -g
+
+# Diretórios
+INCLUDE_DIR = include
+SRC_DIR = src
+OBJ_DIR = obj
+BIN_DIR = bin
+
+# Arquivos fonte
+SOURCES = $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(SRC_DIR)/dao/*.cpp) $(wildcard $(SRC_DIR)/services/*.cpp) $(wildcard $(SRC_DIR)/ui/*.cpp)
+
+# Arquivos objeto (correspondentes aos fontes, mas no diretório obj)
+OBJECTS = $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SOURCES))
+
+# Executável final
+TARGET = $(BIN_DIR)/ft_coin
+
+# Bibliotecas e includes do MariaDB Connector/C++
+# Assumindo que o conector está instalado em /usr/local/
+# Ajuste esses caminhos se necessário
+MARIADB_INCLUDE_DIR = /usr/local/include/mariadb
+MARIADB_LIB_DIR = /usr/local/lib
+MARIADB_LIBS = -lmariadbcpp
+
+# Adiciona diretórios de include ao compilador
+CXXFLAGS += -I$(INCLUDE_DIR) -I$(MARIADB_INCLUDE_DIR)
+
+# Adiciona diretório de biblioteca ao vinculador
+LDFLAGS = -L$(MARIADB_LIB_DIR)
+
+# --- Regras ---
+
+# Regra principal: compila o alvo
+all: $(TARGET)
+
+# Regra para criar o executável
+$(TARGET): $(OBJECTS)
+	@mkdir -p $(@D)
+	$(CXX) $(OBJECTS) -o $@ $(LDFLAGS) $(MARIADB_LIBS)
+	@echo "Executavel '$@' criado com sucesso."
+
+# Regra para compilar arquivos .cpp em arquivos .o
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Regra para limpar os arquivos gerados
+clean:
+	@rm -rf $(OBJ_DIR) $(BIN_DIR)
+	@echo "Arquivos de compilacao e executavel removidos."
+
+# Phony targets não representam arquivos
+.PHONY: all clean
+
