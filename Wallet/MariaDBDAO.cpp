@@ -20,7 +20,7 @@ namespace ft_coin {
     void CarteiraMariaDBDAO::incluir(CarteiraDTO& carteira) {
         try {
             auto conn = createConnection();
-            std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement("INSERT INTO Carteira(nome_titular, corretora) VALUES (?, ?)"));
+            std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement("INSERT INTO CARTEIRA(Titular, Corretora) VALUES (?, ?)"));
             pstmt->setString(1, carteira.nomeTitular);
             pstmt->setString(2, carteira.corretora);
             pstmt->executeUpdate();
@@ -40,15 +40,15 @@ namespace ft_coin {
     std::unique_ptr<CarteiraDTO> CarteiraMariaDBDAO::recuperar(int id) {
         try {
             auto conn = createConnection();
-            std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement("SELECT identificador, nome_titular, corretora FROM Carteira WHERE identificador = ?"));
+            std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement("SELECT IdCarteira, Titular, Corretora FROM CARTEIRA WHERE  IdCarteira = ?"));
             pstmt->setInt(1, id);
             std::unique_ptr<sql::ResultSet> res(pstmt->executeQuery());
 
             if (res->next()) {
                 auto dto = std::make_unique<CarteiraDTO>();
-                dto->id = res->getInt("identificador");
-                dto->nomeTitular = res->getString("nome_titular");
-                dto->corretora = res->getString("corretora");
+                dto->id = res->getInt("IdCarteira");
+                dto->nomeTitular = res->getString("Titular");
+                dto->corretora = res->getString("Corretora");
                 return dto;
             }
         }
@@ -61,7 +61,7 @@ namespace ft_coin {
     void CarteiraMariaDBDAO::editar(const CarteiraDTO& carteira) {
         try {
             auto conn = createConnection();
-            std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement("UPDATE Carteira SET nome_titular = ?, corretora = ? WHERE identificador = ?"));
+            std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement("UPDATE CARTEIRA SET Titular = ?, Corretora = ? WHERE  IdCarteira = ?"));
             pstmt->setString(1, carteira.nomeTitular);
             pstmt->setString(2, carteira.corretora);
             pstmt->setInt(3, carteira.id);
@@ -77,11 +77,11 @@ namespace ft_coin {
     void CarteiraMariaDBDAO::excluir(int id) {
         try {
             auto conn = createConnection();
-            std::unique_ptr<sql::PreparedStatement> delMovPstmt(conn->prepareStatement("DELETE FROM Movimentacao WHERE identificador_carteira = ?"));
+            std::unique_ptr<sql::PreparedStatement> delMovPstmt(conn->prepareStatement("DELETE FROM MOVIMENTACAO WHERE  IdCarteira = ?"));
             delMovPstmt->setInt(1, id);
             delMovPstmt->executeUpdate();
 
-            std::unique_ptr<sql::PreparedStatement> delCartPstmt(conn->prepareStatement("DELETE FROM Carteira WHERE identificador = ?"));
+            std::unique_ptr<sql::PreparedStatement> delCartPstmt(conn->prepareStatement("DELETE FROM CARTEIRA WHERE  IdCarteira = ?"));
             delCartPstmt->setInt(1, id);
             if (delCartPstmt->executeUpdate() == 0) {
                 throw std::runtime_error("Carteira nao encontrada para exclusao.");
@@ -97,12 +97,12 @@ namespace ft_coin {
         try {
             auto conn = createConnection();
             std::unique_ptr<sql::Statement> stmt(conn->createStatement());
-            std::unique_ptr<sql::ResultSet> res(stmt->executeQuery("SELECT identificador, nome_titular, corretora FROM Carteira"));
+            std::unique_ptr<sql::ResultSet> res(stmt->executeQuery("SELECT  IdCarteira, Titular, Corretora FROM CARTEIRA"));
             while (res->next()) {
                 CarteiraDTO dto;
-                dto.id = res->getInt("identificador");
-                dto.nomeTitular = res->getString("nome_titular");
-                dto.corretora = res->getString("corretora");
+                dto.id = res->getInt("IdCarteira");
+                dto.nomeTitular = res->getString("Titular");
+                dto.corretora = res->getString("Corretora");
                 lista.push_back(dto);
             }
         }
@@ -117,7 +117,7 @@ namespace ft_coin {
         try {
             auto conn = createConnection();
             std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement(
-                "INSERT INTO Movimentacao(identificador_carteira, data_operacao, tipo_operacao, quantidade_movimentada) VALUES (?, ?, ?, ?)"
+                "INSERT INTO MOVIMENTACAO(IdCarteira, Data, TipoOperacao, Quantidade) VALUES (?, ?, ?, ?)"
             ));
             pstmt->setInt(1, movimentacao.idCarteira);
             pstmt->setString(2, movimentacao.dataOperacao);
@@ -141,17 +141,17 @@ namespace ft_coin {
         try {
             auto conn = createConnection();
             std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement(
-                "SELECT identificador_movimento, data_operacao, tipo_operacao, quantidade_movimentada FROM Movimentacao WHERE identificador_carteira = ? ORDER BY data_operacao"
+                "SELECT IdMovimento, Data, TipoOperacao, Quantidade FROM MOVIMENTACAO WHERE IdCarteira = ? ORDER BY Data"
             ));
             pstmt->setInt(1, idCarteira);
             std::unique_ptr<sql::ResultSet> res(pstmt->executeQuery());
             while (res->next()) {
                 MovimentacaoDTO dto;
-                dto.id = res->getInt("identificador_movimento");
+                dto.id = res->getInt("IdMovimento");
                 dto.idCarteira = idCarteira;
-                dto.dataOperacao = res->getString("data_operacao");
-                dto.tipoOperacao = res->getString("tipo_operacao")[0];
-                dto.quantidade = res->getDouble("quantidade_movimentada");
+                dto.dataOperacao = res->getString("Data");
+                dto.tipoOperacao = res->getString("TipoOperacao")[0];
+                dto.quantidade = res->getDouble("Quantidade");
                 historico.push_back(dto);
             }
         }
@@ -165,14 +165,14 @@ namespace ft_coin {
     std::unique_ptr<OraculoDTO> OraculoMariaDBDAO::getCotacao(const std::string& data) {
         try {
             auto conn = createConnection();
-            std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement("SELECT cotacao FROM Oraculo WHERE data = ?"));
+            std::unique_ptr<sql::PreparedStatement> pstmt(conn->prepareStatement("SELECT Cotacao FROM ORACULO WHERE data = ?"));
             pstmt->setString(1, data);
             std::unique_ptr<sql::ResultSet> res(pstmt->executeQuery());
 
             if (res->next()) {
                 auto dto = std::make_unique<OraculoDTO>();
                 dto->data = data;
-                dto->cotacao = res->getDouble("cotacao");
+                dto->cotacao = res->getDouble("Cotacao");
                 return dto;
             }
         }
@@ -186,12 +186,12 @@ namespace ft_coin {
         try {
             auto conn = createConnection();
             std::unique_ptr<sql::Statement> stmt(conn->createStatement());
-            std::unique_ptr<sql::ResultSet> res(stmt->executeQuery("SELECT data, cotacao FROM Oraculo ORDER BY data DESC LIMIT 1"));
+            std::unique_ptr<sql::ResultSet> res(stmt->executeQuery("SELECT Data, Cotacao FROM ORACULO ORDER BY Data DESC LIMIT 1"));
 
             if (res->next()) {
                 auto dto = std::make_unique<OraculoDTO>();
-                dto->data = res->getString("data");
-                dto->cotacao = res->getDouble("cotacao");
+                dto->data = res->getString("Data");
+                dto->cotacao = res->getDouble("Cotacao");
                 return dto;
             }
         }

@@ -1,7 +1,56 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\OraculoMemoryDAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\OraculoMemoryDAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\MariaDBDAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\MariaDBDAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\OraculoMemoryDAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\OraculoMemoryDAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\RelatorioService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\RelatorioService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\IOraculoDAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\IOraculoDAO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CarteiraService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\CarteiraService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\MovimentacaoService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\MovimentacaoService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\MovimentacaoMemoryDAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\MovimentacaoMemoryDAO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CarteiraDTO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\CarteiraDTO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CLI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\CLI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CLI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B635B7A-4158-443B-8026-D546DC205557}|Wallet\\Wallet.vcxproj|solutionrelative:Wallet\\CLI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +58,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OraculoMemoryDAO.h",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\OraculoMemoryDAO.h",
+              "RelativeDocumentMoniker": "Wallet\\OraculoMemoryDAO.h",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\OraculoMemoryDAO.h*",
+              "RelativeToolTip": "Wallet\\OraculoMemoryDAO.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-11T19:36:06.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OraculoMemoryDAO.cpp",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\OraculoMemoryDAO.cpp",
+              "RelativeDocumentMoniker": "Wallet\\OraculoMemoryDAO.cpp",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\OraculoMemoryDAO.cpp*",
+              "RelativeToolTip": "Wallet\\OraculoMemoryDAO.cpp*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T19:23:49.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MovimentacaoMemoryDAO.cpp",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\MovimentacaoMemoryDAO.cpp",
+              "RelativeDocumentMoniker": "Wallet\\MovimentacaoMemoryDAO.cpp",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\MovimentacaoMemoryDAO.cpp",
+              "RelativeToolTip": "Wallet\\MovimentacaoMemoryDAO.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T19:11:49.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CarteiraDTO.h",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CarteiraDTO.h",
+              "RelativeDocumentMoniker": "Wallet\\CarteiraDTO.h",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CarteiraDTO.h",
+              "RelativeToolTip": "Wallet\\CarteiraDTO.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-11T19:02:08.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\main.cpp",
+              "RelativeDocumentMoniker": "Wallet\\main.cpp",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\main.cpp",
+              "RelativeToolTip": "Wallet\\main.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T18:55:25.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MariaDBDAO.cpp",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\MariaDBDAO.cpp",
+              "RelativeDocumentMoniker": "Wallet\\MariaDBDAO.cpp",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\MariaDBDAO.cpp",
+              "RelativeToolTip": "Wallet\\MariaDBDAO.cpp",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAEwHwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T18:58:10.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RelatorioService.cpp",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\RelatorioService.cpp",
+              "RelativeDocumentMoniker": "Wallet\\RelatorioService.cpp",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\RelatorioService.cpp",
+              "RelativeToolTip": "Wallet\\RelatorioService.cpp",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAADsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T19:22:46.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MovimentacaoService.cpp",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\MovimentacaoService.cpp",
+              "RelativeDocumentMoniker": "Wallet\\MovimentacaoService.cpp",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\MovimentacaoService.cpp",
+              "RelativeToolTip": "Wallet\\MovimentacaoService.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T19:11:57.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CarteiraService.cpp",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CarteiraService.cpp",
+              "RelativeDocumentMoniker": "Wallet\\CarteiraService.cpp",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CarteiraService.cpp",
+              "RelativeToolTip": "Wallet\\CarteiraService.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T19:12:43.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IOraculoDAO.h",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\IOraculoDAO.h",
+              "RelativeDocumentMoniker": "Wallet\\IOraculoDAO.h",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\IOraculoDAO.h",
+              "RelativeToolTip": "Wallet\\IOraculoDAO.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-11T19:23:39.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CLI.h",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CLI.h",
+              "RelativeDocumentMoniker": "Wallet\\CLI.h",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CLI.h",
+              "RelativeToolTip": "Wallet\\CLI.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-11T18:55:11.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CLI.cpp",
+              "DocumentMoniker": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CLI.cpp",
+              "RelativeDocumentMoniker": "Wallet\\CLI.cpp",
+              "ToolTip": "C:\\Users\\Andre\\OneDrive\\Documentos\\Estudos-Prog\\Desenvolvimento-C\u002B\u002B\\Wallet\\Wallet\\CLI.cpp",
+              "RelativeToolTip": "Wallet\\CLI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T18:55:01.11Z",
+              "EditorCaption": ""
             }
           ]
         }
