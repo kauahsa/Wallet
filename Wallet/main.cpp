@@ -20,7 +20,7 @@ using namespace ft_coin;
 // ### 'true' para usar o banco MariaDB (remoto)             ####
 // ### 'false' para usar a simulação em memória              ####
 // ##############################################################
-const bool USE_DATABASE = true;
+const bool USE_DATABASE = false;
 
 int main() {
     #ifdef _WIN32
